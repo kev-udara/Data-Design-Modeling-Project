@@ -1,0 +1,95 @@
+Query 1: Retrieve all Thrillers movies released after 2010
+Result Count: 476
+Execution Time: 0.3265 seconds
+Result (Sample): [{'title': 'Intrusion', 'release_year': 2021}, {'title': 'Paranoia', 'release_year': 2013}, {'title': 'The Father Who Moves Mountains', 'release_year': 2021}, {'title': 'Prey', 'release_year': 2021}, {'title': 'Paradise Hills', 'release_year': 2019}]
+--------------------------------------------------------------------------------
+Query 2: Find all TV Shows from the United States
+Result Count: 938
+Execution Time: 0.0682 seconds
+Result (Sample): [{'title': 'Dear White People', 'country': ['United States']}, {'title': 'He-Man and the Masters of the Universe', 'country': ['United States']}, {'title': 'Nailed It', 'country': ['United States']}, {'title': 'Saved by the Bell', 'country': ['United States']}, {'title': 'Lucifer', 'country': ['United States']}]
+--------------------------------------------------------------------------------
+Query 3: Search for movies with a specific actor (Leonardo DiCaprio)
+Result Count: 9
+Execution Time: 0.0285 seconds
+Result (Sample): [{'title': 'Catch Me If You Can', 'cast': ['Leonardo DiCaprio', 'Tom Hanks', 'Christopher Walken', 'Martin Sheen', 'Nathalie Baye', 'Amy Adams', 'James Brolin', 'Brian Howe', 'Frank John Hughes', 'Steve Eastin']}, {'title': 'Inception', 'cast': ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Elliot Page', 'Tom Hardy', 'Ken Watanabe', 'Dileep Rao', 'Cillian Murphy', 'Tom Berenger', 'Marion Cotillard', 'Pete Postlethwaite', 'Michael Caine', 'Lukas Haas']}, {'title': 'Django Unchained', 'cast': ['Jamie Foxx', 'Christoph Waltz', 'Leonardo DiCaprio', 'Kerry Washington', 'Samuel L. Jackson', 'Walton Goggins', 'Dennis Christopher', 'James Remar', 'David Steen', 'Dana Gourrier', 'Nichole Galicia', 'Laura Cayouette', 'Ato Essandoh', 'Sammi Rotibi', 'Escalante Lundy', 'Don Johnson']}, {'title': 'Shutter Island', 'cast': ['Leonardo DiCaprio', 'Mark Ruffalo', 'Ben Kingsley', 'Max von Sydow', 'Michelle Williams', 'Emily Mortimer', 'Patricia Clarkson', 'Jackie Earle Haley', 'Ted Levine', 'John Carroll Lynch', 'Elias Koteas']}, {'title': "What's Eating Gilbert Grape", 'cast': ['Johnny Depp', 'Leonardo DiCaprio', 'Juliette Lewis', 'Mary Steenburgen', 'Darlene Cates', 'Laura Harrington', 'Mary Kate Schellhardt', 'Kevin Tighe', 'John C. Reilly', 'Crispin Glover']}]
+--------------------------------------------------------------------------------
+Query 4: Find titles added to Netflix in 2021
+Result Count: 1498
+Execution Time: 0.0676 seconds
+Result (Sample): [{'title': 'Dick Johnson Is Dead', 'date_added': '2021-09-25T00:00:00'}, {'title': 'Blood & Water', 'date_added': '2021-09-24T00:00:00'}, {'title': 'Ganglands', 'date_added': '2021-09-24T00:00:00'}, {'title': 'Jailbirds New Orleans', 'date_added': '2021-09-24T00:00:00'}, {'title': 'Kota Factory', 'date_added': '2021-09-24T00:00:00'}]
+--------------------------------------------------------------------------------
+Query 5: Retrieve all titles with a PG-13 rating
+Result Count: 490
+Execution Time: 0.0463 seconds
+Result (Sample): [{'title': 'Dick Johnson Is Dead', 'rating': 'PG-13'}, {'title': 'The Starling', 'rating': 'PG-13'}, {'title': 'Grown Ups', 'rating': 'PG-13'}, {'title': 'Dark Skies', 'rating': 'PG-13'}, {'title': 'Paranoia', 'rating': 'PG-13'}]
+--------------------------------------------------------------------------------
+Query 6: Search for movies with a duration greater than 120 minutes
+Result Count: 1142
+Execution Time: 0.0550 seconds
+Result (Sample): [{'title': 'Sankofa', 'duration': {'number': 125, 'unit': 'min'}}, {'title': 'Je Suis Karl', 'duration': {'number': 127, 'unit': 'min'}}, {'title': 'Avvai Shanmughi', 'duration': {'number': 161, 'unit': 'min'}}, {'title': 'Jeans', 'duration': {'number': 166, 'unit': 'min'}}, {'title': 'Minsara Kanavu', 'duration': {'number': 147, 'unit': 'min'}}]
+--------------------------------------------------------------------------------
+Query 7: List all movies released between 2000 and 2010
+Result Count: 831
+Execution Time: 0.0505 seconds
+Result (Sample): [{'title': 'Grown Ups', 'release_year': 2010}, {'title': 'Training Day', 'release_year': 2001}, {'title': 'InuYasha the Movie 2: The Castle Beyond the Looking Glass', 'release_year': 2002}, {'title': 'InuYasha the Movie 3: Swords of an Honorable Ruler', 'release_year': 2003}, {'title': 'InuYasha the Movie 4: Fire on the Mystic Island', 'release_year': 2004}]
+--------------------------------------------------------------------------------
+Query 8: Count the number of movies by genre
+Result Count: 20
+Execution Time: 0.0340 seconds
+Result (Sample): [{'count': 243, 'genre': 'Sci-Fi & Fantasy'}, {'count': 869, 'genre': 'Documentaries'}, {'count': 71, 'genre': 'Cult Movies'}, {'count': 343, 'genre': 'Stand-Up Comedy'}, {'count': 57, 'genre': 'Movies'}]
+--------------------------------------------------------------------------------
+Query 9: Average duration of movies per genre
+Result Count: 20
+Execution Time: 0.0367 seconds
+Result (Sample): [{'avg_duration': 106.01646090534979, 'genre': 'Sci-Fi & Fantasy'}, {'avg_duration': 81.63060989643269, 'genre': 'Documentaries'}, {'avg_duration': 104.52112676056338, 'genre': 'Cult Movies'}, {'avg_duration': 67.3265306122449, 'genre': 'Stand-Up Comedy'}, {'avg_duration': 45.48148148148148, 'genre': 'Movies'}]
+--------------------------------------------------------------------------------
+Query 10: Count TV Shows per country
+Result Count: 66
+Execution Time: 0.0271 seconds
+Result (Sample): [{'count': 14, 'country': 'Ireland'}, {'count': 9, 'country': 'Poland'}, {'count': 7, 'country': 'Lebanon'}, {'count': 4, 'country': 'Pakistan'}, {'count': 8, 'country': 'New Zealand'}]
+--------------------------------------------------------------------------------
+Query 11: Find the total duration of all movies in each genre
+Result Count: 20
+Execution Time: 0.0387 seconds
+Result (Sample): [{'total_duration': 25762, 'genre': 'Sci-Fi & Fantasy'}, {'total_duration': 70937, 'genre': 'Documentaries'}, {'total_duration': 7421, 'genre': 'Cult Movies'}, {'total_duration': 23093, 'genre': 'Stand-Up Comedy'}, {'total_duration': 2456, 'genre': 'Movies'}]
+--------------------------------------------------------------------------------
+Query 12: Identify the top 5 most common genres for movies
+Result Count: 5
+Execution Time: 0.0330 seconds
+Result (Sample): [{'count': 2752, 'genre': 'International Movies'}, {'count': 2427, 'genre': 'Dramas'}, {'count': 1674, 'genre': 'Comedies'}, {'count': 869, 'genre': 'Documentaries'}, {'count': 859, 'genre': 'Action & Adventure'}]
+--------------------------------------------------------------------------------
+Query 13: Find titles directed by Christopher Nolan, grouped by type
+Result Count: 1
+Execution Time: 0.0244 seconds
+Result (Sample): [{'titles': ['Inception'], 'type': 'Movie'}]
+--------------------------------------------------------------------------------
+Query 14: List the genres of movies added to Netflix in 2020
+Result Count: 20
+Execution Time: 0.0289 seconds
+Result (Sample): [{'count': 118, 'genre': 'Documentaries'}, {'count': 48, 'genre': 'Stand-Up Comedy'}, {'count': 47, 'genre': 'Sci-Fi & Fantasy'}, {'count': 13, 'genre': 'Cult Movies'}, {'count': 5, 'genre': 'Movies'}]
+--------------------------------------------------------------------------------
+Query 15: Find all actors who appeared in more than 3 movies
+Result Count: 3246
+Execution Time: 0.1526 seconds
+Result (Sample): [{'count': 8, 'actor': 'Nicholas Hoult'}, {'count': 4, 'actor': 'Ryan Gosling'}, {'count': 6, 'actor': 'Kana Ueda'}, {'count': 5, 'actor': 'Rodger Parsons'}, {'count': 4, 'actor': 'Ahmet Mümtaz Taylan'}]
+--------------------------------------------------------------------------------
+Query 21: Find the most watched movies (Top 5)
+Result Count: 5
+Execution Time: 0.0998 seconds
+Result (Sample): [{'watch_count': 15, 'title': 'White Rabbit Project'}, {'watch_count': 15, 'title': 'Midnight at the Magnolia'}, {'watch_count': 15, 'title': 'Dil Hai Tumhaara'}, {'watch_count': 15, 'title': 'Mr. Woodcock'}, {'watch_count': 15, 'title': 'Ek Hasina Thi'}]
+--------------------------------------------------------------------------------
+Query 22: Recommend the highest-rated movies/shows across all users (Top 5)
+Result Count: 5
+Execution Time: 0.1219 seconds
+Result (Sample): [{'total_ratings': 15, 'title': 'White Rabbit Project', 'type': 'TV Show'}, {'total_ratings': 15, 'title': 'Midnight at the Magnolia', 'type': 'Movie'}, {'total_ratings': 15, 'title': 'Dil Hai Tumhaara', 'type': 'Movie'}, {'total_ratings': 15, 'title': 'Mr. Woodcock', 'type': 'Movie'}, {'total_ratings': 15, 'title': 'Ek Hasina Thi', 'type': 'Movie'}]
+--------------------------------------------------------------------------------
+Query 23: Aggregate movies and TV shows by the number of countries involved
+Result Count: 5
+Execution Time: 0.0340 seconds
+Result (Sample): [{'title': 'Barbecue', 'country_count': 12}, {'title': 'The Look of Silence', 'country_count': 10}, {'title': 'The Professor and the Madman', 'country_count': 8}, {'title': 'Shaun the Sheep', 'country_count': 8}, {'title': 'Arctic Dogs', 'country_count': 7}]
+--------------------------------------------------------------------------------
+Query 24: Find all genres with the average release year of titles
+Result Count: 42
+Execution Time: 0.0414 seconds
+Result (Sample): [{'genre': 'TV Action & Adventure', 'avg_release_year': 2017.0}, {'genre': 'TV Dramas', 'avg_release_year': 2017.0}, {'genre': 'Sports Movies', 'avg_release_year': 2014.0}, {'genre': 'TV Mysteries', 'avg_release_year': 2018.0}, {'genre': 'TV Shows', 'avg_release_year': 1999.0}]
+--------------------------------------------------------------------------------

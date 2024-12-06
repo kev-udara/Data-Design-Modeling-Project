@@ -1,0 +1,47 @@
+Dataset Analysis Report
+==================================================
+
+Analyzing collection: movies&shows
+Total number of records: 8807
+Size of dataset in memory: 0.07 MB
+Average size of each record: 464.00 bytes
+Average size of field '_id': 40.00 bytes
+Average size of field 'show_id': 45.87 bytes
+Average size of field 'type': 46.61 bytes
+Average size of field 'title': 59.35 bytes
+Average size of field 'director': 78.57 bytes
+Average size of field 'cast': 137.27 bytes
+Average size of field 'country': 85.21 bytes
+Average size of field 'date_added': 59.95 bytes
+Average size of field 'release_year': 28.00 bytes
+Average size of field 'listed_in': 88.00 bytes
+Average size of field 'rating': 45.42 bytes
+Average size of field 'duration': 184.00 bytes
+Average size of field 'description': 204.73 bytes
+Analysis for collection 'movies&shows' completed.
+
+Analyzing collection: users
+Total number of records: 5000
+Size of dataset in memory: 0.04 MB
+Average size of each record: 272.00 bytes
+Average size of field '_id': 40.00 bytes
+Average size of field 'user_id': 51.33 bytes
+Average size of field 'name': 53.94 bytes
+Average size of field 'age': 28.00 bytes
+Average size of field 'country': 50.03 bytes
+Average size of field 'preferences': 88.00 bytes
+Analysis for collection 'users' completed.
+
+Analyzing collection: interactions
+Total number of records: 52347
+Size of dataset in memory: 0.42 MB
+Average size of each record: 272.00 bytes
+Average size of field '_id': 40.00 bytes
+Average size of field 'interaction_id': 57.79 bytes
+Average size of field 'user_id': 51.32 bytes
+Average size of field 'show_id': 45.88 bytes
+Average size of field 'user_rating': 24.00 bytes
+Average size of field 'review': 87.48 bytes
+Average size of field 'watched_date': 67.00 bytes
+Analysis for collection 'interactions' completed.
+
