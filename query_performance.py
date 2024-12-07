@@ -195,45 +195,53 @@ def run_queries():
     )
 
     # # Query 16: Add a new genre to a movie
-    # log_query(
-    #     16,
-    #     "Add a new genre to a movie",
-    #     lambda: [db["movies&shows"].update_one(
-    #         {"show_id": "s1"}, {"$push": {"listed_in": "Adventure"}}
-    #     )]
-    # )
+    log_query(
+        16,
+        "Add a new genre to a movie",
+        lambda: [collection.update_one(
+            {"show_id": "s1"},  # Locate the movie by its unique ID
+            {"$push": {"listed_in": "Adventure"}}  # Add a new genre to the listed genres
+        )]
+    )
+    
 
     # # Query 17: Update the rating of a specific movie
-    # log_query(
-    #     17,
-    #     "Update the rating of a specific movie",
-    #     lambda: [db["movies&shows"].update_one(
-    #         {"show_id": "s2"}, {"$set": {"rating": "R"}}
-    #     )]
-    # )
+    log_query(
+        17,
+        "Update the rating of a specific movie",
+        lambda: [collection.update_one(
+            {"show_id": "s2"},  # Locate the movie by its unique ID
+            {"$set": {"rating": "R"}}  # Update the rating to 'R'
+        )]
+    )
 
     # # Query 18: Change the release year of a title
-    # log_query(
-    #     18,
-    #     "Change the release year of a title",
-    #     lambda: [db["movies&shows"].update_one(
-    #         {"show_id": "s3"}, {"$set": {"release_year": 2020}}
-    #     )]
-    # )
+    log_query(
+        18,
+        "Change the release year of a title",
+        lambda: [collection.update_one(
+            {"show_id": "s3"},  # Locate the movie by its unique ID
+            {"$set": {"release_year": 2020}}  # Change the release year to 2020
+        )]
+    )
 
     # # Query 19: Delete a specific movie by ID
-    # log_query(
-    #     19,
-    #     "Delete a specific movie by ID",
-    #     lambda: [db["movies&shows"].delete_one({"show_id": "s100"})]
-    # )
+    log_query(
+        19,
+        "Delete a specific movie by ID",
+        lambda: [collection.delete_one(
+            {"show_id": "s100"}  # Delete the movie with this specific ID
+        )]
+    )
 
     # # Query 20: Remove all TV Shows from 2015
-    # log_query(
-    #     20,
-    #     "Remove all TV Shows from 2015",
-    #     lambda: [db["movies&shows"].delete_many({"type": "TV Show", "release_year": 2015})]
-    # )
+    log_query(
+        20,
+        "Remove all TV Shows from 2015",
+        lambda: [collection.delete_many(
+            {"type": "TV Show", "release_year": 2015}  # Delete all TV Shows from 2015
+        )]
+    )
 
     # Query 21: Find the most watched movies (Top 5)
     log_query(
